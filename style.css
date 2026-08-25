@@ -198,3 +198,21 @@ body {
     cursor: not-allowed;
     opacity: 0.8;
 }
+   ERROR MESSAGE
+.error-message {
+    display: none;
+
+    margin-bottom: 15px;
+    padding: 14px;
+
+    background-color: #fdeaea;
+    color: #b42318;
+
+    border: 1px solid #f5c2c0;
+    border-radius: 7px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
