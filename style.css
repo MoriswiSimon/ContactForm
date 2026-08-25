@@ -167,3 +167,34 @@ body {
     }
 
 }
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message {
+    display: none;
+
+    margin-top: 20px;
+    padding: 14px;
+
+    background-color: #e8f7ee;
+    color: #187a3d;
+
+    border: 1px solid #b7e4c7;
+    border-radius: 7px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================
+   DISABLED BUTTON
+========================= */
+
+.contact-form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
