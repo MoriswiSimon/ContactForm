@@ -1,3 +1,7 @@
+/* =========================
+   GENERAL PAGE
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,28 +11,38 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f9;
-
+    color: #222;
     min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
+    padding: 30px;
 }
+
+
+/* =========================
+   CONTACT CONTAINER
+========================= */
 
 .contact-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
 
-    background-color: white;
+    background-color: #ffffff;
 
-    padding: 35px;
+    padding: 40px;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
+
+
+/* =========================
+   HEADER
+========================= */
 
 .contact-header {
     text-align: center;
@@ -45,66 +59,111 @@ body {
     font-size: 15px;
 }
 
+
+/* =========================
+   FORM
+========================= */
+
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
 }
 
-
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
-    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: 600;
     font-size: 14px;
 }
+
+
+/* =========================
+   INPUTS
+========================= */
 
 .form-group input,
 .form-group textarea {
     width: 100%;
 
-    padding: 12px;
+    padding: 13px 14px;
 
-    border: 1px solid #ccc;
-
-    border-radius: 6px;
+    border: 1px solid #d5d9df;
+    border-radius: 7px;
 
     font-size: 15px;
+    font-family: inherit;
 
     outline: none;
-}
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #333;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .form-group textarea {
     resize: vertical;
+    min-height: 140px;
 }
 
-button {
-    padding: 13px;
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-form button {
+    width: 100%;
+
+    padding: 14px;
 
     border: none;
+    border-radius: 7px;
 
-    border-radius: 6px;
-
-    background-color: #222;
-
+    background-color: #007bff;
     color: white;
 
     font-size: 16px;
-
-    font-weight: bold;
+    font-weight: 600;
 
     cursor: pointer;
+
+    transition: background-color 0.2s;
 }
 
-button:hover {
-    background-color: #444;
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .contact-container {
+        padding: 25px 20px;
+    }
+
+    .contact-header h1 {
+        font-size: 26px;
+    }
+
 }
